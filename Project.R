@@ -713,8 +713,8 @@ Trump_Wyoming.df$text = gsub("(f|ht)tp(s?)://(.*)[.][a-z]+", "", Trump_Wyoming.d
 Trump_Wyoming <- Trump_Wyoming.df$text;
 
 #Reading Words Database
-pos.words = scan('/Users/apple/Desktop/VIT/CSE 329 MIS/Project/Twitter_Analysis/Positive_Words.txt', what='character', comment.char=';');
-neg.words = scan('/Users/apple/Desktop/VIT/CSE 329 MIS/Project/Twitter_Analysis/Negative_Words.txt', what='character', comment.char=';');
+pos.words = scan('/Users/apple/Desktop/VIT/Twitter Project/positive-words.txt', what='character', comment.char=';');
+neg.words = scan('/Users/apple/Desktop/VIT/Twitter Project/negative-words.txt', what='character', comment.char=';');
 
 #Score Sentiment Function (USED IN PROCESSING)
 score.sentiment = function(sentences, pos.words, neg.words, .progress='none')
